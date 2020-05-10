@@ -7,7 +7,7 @@ public final class PlugModGit extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-
+        System.out.println("Plugin loads");
     }
 
     @Override
