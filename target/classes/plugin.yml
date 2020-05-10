@@ -1,0 +1,4 @@
+name: PlugModGit
+version: 1.0-SNAPSHOT
+main: codedesign.plugmodgit.PlugModGit
+api-version: 1.13
