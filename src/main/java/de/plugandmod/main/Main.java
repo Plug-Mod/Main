@@ -9,14 +9,16 @@ public final class Main extends JavaPlugin {
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("Hallo Welt");
+        System.out.println("Plugin starts");
         PluginManager  pm  = Bukkit.getPluginManager();
         pm.registerEvents(new Joinlistener(), this);
+        System.out.println("Plugin started");
     }
 
     @Override
     public void onDisable() {
         // Plugin shutdown logic
+        System.out.println("Plugin shutdown");
     }
     public void loadEvent(){
         System.out.println("loaded");
