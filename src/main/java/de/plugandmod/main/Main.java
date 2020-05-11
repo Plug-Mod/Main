@@ -1,18 +1,21 @@
 package de.plugandmod.main;
 
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.inventory.ShapedRecipe;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
+    String debugg = ChatColor.DARK_PURPLE + "Debugg";
 
     @Override
     public void onEnable() {
         // Plugin startup logic
-        System.out.println("Hallo Welt");
-        PluginManager  pm  = Bukkit.getPluginManager();
+
+        System.out.println(debugg + ChatColor.WHITE +"Hallo Welt");
+        PluginManager pm  = Bukkit.getPluginManager();
         pm.registerEvents(new Joinlistener(), this);
 
         ShapedRecipe gem = new ShapedRecipe(Newitem.gem());
@@ -28,8 +31,11 @@ public final class Main extends JavaPlugin {
         ShapedRecipe sword = new ShapedRecipe(Newitem.sword());
         sword.shape("AUA","AUA","ABA");
         sword.setIngredient('A', Material.AIR);
-        sword.setIngredient('U', Newitem.gem());
+        sword.setIngredient('U',Newitem.gem());
         sword.setIngredient('B', Material.BLAZE_ROD);
+        Bukkit.addRecipe(sword);
+
+
 
     }
 

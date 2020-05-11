@@ -1,4 +1,4 @@
-name: PlugModGit
+name: PlugMod
 version: ${project.version}
-main: codedesign.plugmodgit.PlugModGit
+main: de.plugandmod.main.Main
 api-version: 1.13
