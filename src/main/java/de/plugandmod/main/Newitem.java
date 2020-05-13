@@ -8,11 +8,20 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 public class Newitem {
 
+    public static ItemStack protected_gem(){
+        ItemStack item = new ItemStack(Material.DIAMOND);
+        ItemMeta itemMeta = item.getItemMeta();
+        itemMeta.setDisplayName("§8protected_gem");
+        itemMeta.setCustomModelData(1);
+        item.setItemMeta(itemMeta);
+        return item;
+
+    }
     public static ItemStack gem(){
         ItemStack item = new ItemStack(Material.DIAMOND);
         ItemMeta itemMeta = item.getItemMeta();
-        itemMeta.setDisplayName("Gem");
-        itemMeta.setCustomModelData(1);
+        itemMeta.setDisplayName("§6Gem");
+        itemMeta.setCustomModelData(2);
         item.setItemMeta(itemMeta);
         return item;
 
