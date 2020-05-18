@@ -34,6 +34,7 @@ public class Main extends JavaPlugin implements Listener {
         PluginManager pm  = Bukkit.getPluginManager();
         pm.registerEvents(new Joinlistener(), this);
         pm.registerEvents(new DropListener(),this);
+        pm.registerEvents(new SwordListener(),this);
         //pm.registerEvents(this,this);
 
 
